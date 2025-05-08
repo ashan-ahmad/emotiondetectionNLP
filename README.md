@@ -1,2 +1,106 @@
-# emotiondetectionNLP
-# emotiondetectionNLP
+# Emotion Detection Application
+
+This project is an AI-based web application that performs emotion detection on customer feedback using IBM Watson NLP libraries. The application analyzes text input and identifies emotions such as anger, disgust, fear, joy, and sadness, along with their respective scores and the dominant emotion.
+
+## Features
+- Analyze text input to detect emotions.
+- Provides scores for anger, disgust, fear, joy, and sadness.
+- Identifies the dominant emotion in the text.
+- Web deployment using Flask for user interaction.
+- Error handling for invalid or blank inputs.
+- Static code analysis for code quality assurance.
+
+## Project Structure
+```
+final_project/
+│
+├── EmotionDetection/
+│   ├── __init__.py
+│   ├── emotion_detection.py
+│
+├── static/
+│   └── mywebscript.js
+│
+├── templates/
+│   └── index.html
+│
+├── server.py
+├── test_emotion_detection.py
+└── README.md
+```
+
+## Setup Instructions
+
+### Prerequisites
+- Python 3.x
+- `requests` library (Install using `pip install requests`)
+- Flask (Install using `pip install flask`)
+- PyLint (Optional, for static code analysis: `pip install pylint`)
+
+### Steps to Run the Application
+1. **Clone the Repository**  
+   Clone the project repository to your local machine:
+   ```bash
+   git clone <repository-url>
+   cd final_project
+   ```
+
+2. **Run the Emotion Detection Script**  
+   Test the `emotion_detection.py` script in a Python shell:
+   ```python
+   from EmotionDetection.emotion_detection import emotion_detector
+   print(emotion_detector("I love this new technology."))
+   ```
+
+3. **Run Unit Tests**  
+   Execute the unit tests to validate the application:
+   ```bash
+   python test_emotion_detection.py
+   ```
+
+4. **Deploy the Application**  
+   Start the Flask server:
+   ```bash
+   python server.py
+   ```
+   Access the application at `http://localhost:5000`.
+
+5. **Test the Web Application**  
+   Enter text in the web interface to analyze emotions.
+
+### Error Handling
+- For blank inputs, the application returns a message: `Invalid text! Please try again!`.
+
+### Static Code Analysis
+Run PyLint on `server.py` to ensure code quality:
+```bash
+pylint server.py
+```
+
+## Example Output
+For the input text: `I love my life`, the application returns:
+```json
+{
+  "anger": 0.006274985,
+  "disgust": 0.0025598293,
+  "fear": 0.009251528,
+  "joy": 0.9680386,
+  "sadness": 0.049744144,
+  "dominant_emotion": "joy"
+}
+```
+
+## Screenshots
+- **Folder Structure**: `1_folder_structure.png`
+- **Emotion Detection Code**: `2a_emotion_detection.png`
+- **Application Test Output**: `2b_application_creation.png`
+- **Formatted Output Code**: `3a_output_formatting.png`
+- **Formatted Output Test**: `3b_formatted_output_test.png`
+- **Packaging**: `4a_packaging.png`, `4b_packaging_test.png`
+- **Unit Testing**: `5a_unit_testing.png`, `5b_unit_testing_result.png`
+- **Web Deployment**: `6a_server.png`, `6b_deployment_test.png`
+- **Error Handling**: `7a_error_handling_function.png`, `7b_error_handling_server.png`, `7c_error_handling_interface.png`
+- **Static Code Analysis**: `8a_server_modified.png`, `8b_static_code_analysis.png`
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.

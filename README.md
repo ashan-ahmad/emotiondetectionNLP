@@ -90,17 +90,5 @@ For the input text: `I love my life`, the application returns:
 }
 ```
 
-## Screenshots
-- **Folder Structure**: `1_folder_structure.png`
-- **Emotion Detection Code**: `2a_emotion_detection.png`
-- **Application Test Output**: `2b_application_creation.png`
-- **Formatted Output Code**: `3a_output_formatting.png`
-- **Formatted Output Test**: `3b_formatted_output_test.png`
-- **Packaging**: `4a_packaging.png`, `4b_packaging_test.png`
-- **Unit Testing**: `5a_unit_testing.png`, `5b_unit_testing_result.png`
-- **Web Deployment**: `6a_server.png`, `6b_deployment_test.png`
-- **Error Handling**: `7a_error_handling_function.png`, `7b_error_handling_server.png`, `7c_error_handling_interface.png`
-- **Static Code Analysis**: `8a_server_modified.png`, `8b_static_code_analysis.png`
-
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.

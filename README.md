@@ -38,6 +38,7 @@ final_project/
 - PyLint (Optional, for static code analysis: `pip install pylint`)
 
 ### Steps to Run the Application
+**NOTE**: The Repository belongs to watsonAI and need their permission to access their NLP server. You can use another NLP source or use a link which grant you access because one can't access it using my link as it has restrictions
 1. **Clone the Repository**  
    Clone the project repository to your local machine:
    ```bash
